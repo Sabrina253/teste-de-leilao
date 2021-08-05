@@ -1,0 +1,22 @@
+{
+  "name": "teste-de-leilao",
+  "version": "1.0.0",
+  "description": "Fazendo teste com o Jest",
+  "main": "Leilao.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sabrina253/teste-de-leilao.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Sabrina253/teste-de-leilao/issues"
+  },
+  "homepage": "https://github.com/Sabrina253/teste-de-leilao#readme",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
+}
