@@ -5,6 +5,7 @@ const Lance = require('./Lance');
             this.descricao = desc;
             this.lances = [];
             this.maiorLance = new Lance('Nenhum', 0.0);
+            this.menorLance = new Lance('Nenhum', 900.0);
         }
 
         getDescricao(){
@@ -19,6 +20,10 @@ const Lance = require('./Lance');
             return this.maiorLance;
         }
 
+        getMenorLance(){
+            return this.menorLance;
+        }
+
         propoe(lance){
             this.lances.push(lance);
         }
@@ -27,7 +32,17 @@ const Lance = require('./Lance');
             this.lances.forEach(
                 (lance) => {
                     if(lance.getValor() > this.maiorLance.getValor()){
-                        this.maiorLance = lance;
+                        this.maiorLance = lance; 
+                    }   
+                }
+            );
+        }
+
+        encontre(){
+            this.lances.forEach(
+                (lance) => {
+                    if(lance.getValor() < this.menorLance.getValor()){
+                        this.menorLance = lance;
                     }
                 }
             );
